@@ -39,6 +39,7 @@ Section 1: The Basics
         <form> is used to specify an element that will allow the user to enter in data to the webpage.
         <input> is used to enter data.
         <button> is used to create buttons on the page.
+        <span> is an inline element used for a small chunk of code.  It allows you to apply style to content within another element, such as <p>
     1.3: Comments
         Comments are a way of letting people know what the code is doing.  It does not affect the content of the site in any way.
         You can block comment with <!--This is a comment-->

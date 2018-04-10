@@ -13,6 +13,10 @@ Sections:
     1.6: Inheritance
 2: Bootstrap
     2.1: What is Bootstrap?
+    2.2: Adding Bootstrap
+    2.3: Coding Bootstrap
+        2.3.1: Bootstrap Classes
+        2.3.2: Columns
 3: Preprocessors
 
 Section 1: The Basics
@@ -52,4 +56,25 @@ Section 2: Bootstrap
     2.1: What is Bootstrap?
         Bootstrap is a css framework with pre-styled classes that you can use in your html code.  The classes are responsive and come with attributes and rules so you do not have
         to come up with them yourself.  However, you should change some of the styling on them to make your page unique.
+    2.2.: Adding Bootstrap
+        You can add Bootstrap to a CSS file through a CDN (Content Delivery Network).
+        Pasting this code <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/> will make Bootstrap available.
+    2.3: Coding Bootstrap
+        Adding the premade Bootstrap classes around your existing code will give them the functionality you want, depending on the class name.
+        2.3.1: Bootstrap Classes
+            Here is a brief list of useful Bootstrap classes.
+            container-fluid: used to fit the container through full width of the screen
+            img-responsive: makes the image scale to its parent element
+            text-center: aligns the text to the center
+            text-primary: makes the text blue
+            btn: creates a plain bootstrap button, grey with rounded borders
+            btn-block: makes the button span the width of its parent container
+            btn-primary: makes the button blue coloured
+            btn-info: makes the button light blue
+            btn-delete: makes the button red
+            row: creates a container for responsive columns
+        2.3.2: Columns
+            Bootstrap uses columns to span elements across the screen.  There are 12 columns that span the page, and you can use Bootstrap to divide the page up into groups of
+            12, 8 and 4, 3 4s, and 2 6s.
+            col-foo-bar : foo = xs, sm, md, lg for screen size. bar = span size 1 to 12.
 Section 3: Preprocessors.
