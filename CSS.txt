@@ -28,8 +28,8 @@ Section 1: The Basics
             clockwise order like padding: 10px 10px 10px 10px.
         1.2.3: Margin
             Margin controls the amount of space between an elements border and the elements outside of it.  The higher the margin the more squashed an element is inside outer elements.
-            If you set the margins to a negative value, the element will grow and take up more space of its surrounding element.  cant use top, bottom, left, right or stack them in
-            a clockwide order like margin: 10px 10px 10px 10px.
+            If you set the margins to a negative value, the element will grow and take up more space of its surrounding element.  can use top, bottom, left, right or stack them in
+            a clockwise order like margin: 10px 10px 10px 10px.
     1.3: Rules
         Rules determine what stye the particular attribute should take on.  For example what colour, what size, what look is that section of the page going to have?
     1.4: Styling Classes
