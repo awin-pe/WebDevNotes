@@ -1,0 +1,4 @@
+These are notes for Javascript planning.
+
+Sections:
+1: The Basics

@@ -1,0 +1,82 @@
+These are notes for HTML programming.
+
+Sections:
+1: The Basics
+    1.1: Elements
+        1.1.1: Styles
+        1.1.2: Nesting
+    1.2: Tags
+    1.3: Comments
+    1.4: Classes
+        1.4.1: ID
+    1.5: Linking
+        1.5.1: Anchors
+    1.6: Images
+    1.7: Forms
+        1.7.1: Input
+            1.7.1.1: Text
+            1.7.1.2: Radio
+            1.7.1.3: Checklist
+            1.7.1.4: Reset
+2. The DOM
+
+Section 1: The Basics
+    1.1: Elements
+        All html web pages are made up of "elements".  Each element consists of two tags, one start tag and one end tag.  For example <h1> </h1>.
+        The closing tag will have a forward slash after the arrow.  By default, all website content is in an element called <body>
+        1.1.1: Styles
+            You can style elements individually by using "style" inside the starting tag.  For example <h1 style = "foo"> bar </h1>
+        1.1.2.: Nesting
+            You can nest as many elements as you want within each other.  Doing so means you can use pictures and links, use links in text, etc.
+    1.2: Tags
+        <body> Specifies the whole body of the site.
+        <h1-6> Are used for headings.  The size of the heading gets smaller as the number gets larger.
+        <p> is used for paragraphs of text.
+        <style> is used to add a block of style using css code.  For more information refer to the CSS notes.
+        <a> is used to anchor to other web pages or html pages
+        <link> is used to link to other resources as part of the head meta deta
+        <ol> <ul> <li> are used to create lists.  Ordered, Unordered, List items.
+        <form> is used to specify an element that will allow the user to enter in data to the webpage.
+        <input> is used to enter data.
+        <button> is used to create buttons on the page.
+    1.3: Comments
+        Comments are a way of letting people know what the code is doing.  It does not affect the content of the site in any way.
+        You can block comment with <!--This is a comment-->
+    1.4 Classes
+        Classes are a way of dividing up your html code and create a heirarchy of elements.
+        You can create a class using the <div class=""> tag, or by using the keyword class within an existing element e.g. <h1 class="">
+        You can add multiple classes to one element by separating them with a space.  E.g. <h1 class = "class1 class2 class3">.  When styling classes, the last class will override
+        any other conflicting styles.
+        Once you have specified the classes you can then style them specifically using CSS - see CSS for more information.
+        1.4.1 ID
+            ID is a way of uniquely identifying a particular element, similar to classes.  However, unlike classes, each element should have a unique id. e.g. <h1 id="">
+    1.5: Linking
+        You can link to other resources using the <link href=""> tag.  Use href to specify what that link element is linking to. NOTE: This can only be used in the head element
+        as meta data.  Linking to other pages uses a different tag.
+        1.5.1: Anchors
+            In order to link to an outside page or another html page you must use an <a> element, NOT a <link> element.  E.g. <a href="www.google.com"> Link to google </a>
+            You can use text or other elements, such as an image, as the link to be clicked on.
+            You can use a hash to turn the link dead but retain the element.  This is useful when you want to change the link with jquery later.
+    1.6: Images
+        You can include images into your web page using the <img> tag.  Use src to specify where the picture is coming from, either locally or with a url.
+        Use alt to describe the image if it cannot be loaded.  e.g. <img src="pic.jpg" alt="This is a picture">
+    1.7: Forms
+        Forms are used to allow users to enter data to the website, which is the sent via a server to you.  There are different form elements that can do this.
+        For example, <form> foo </form>
+        The action attribute defines what should happen when the form is submitted.  The target attribute specifies if the submitted result will open in a new window, tab, or frame.
+        For example, <form action="do-something"> foo </form>
+        1.7.1: Input
+            You can use an input element to allow the user to type data to the page within the form.  Remember to specify how they will be entering the data.  Each type of input
+            should be nested inside a label element so that it can be better controlled.
+            1.7.1.1: Text
+                Will give an empty box in which data should be typed.  You can use the placeholder attribute to have text in the box before anything is inputted.  e.g. <input="text" placeholder="text">
+                You can use the required attribute so that no-one can use the form without typing something. e.g. <input="" required placeholder="">
+            1.7.1.2: Radio
+                Radio gives a selection of boxes where the user can only select one.  All related radio buttons should have the same name attribute to group them together.
+                For example, <label><input type="radio" name ="buttons" checked required>Test button</label>.  You can set the box to be checked automatically with the checked
+                attribute.
+            1.7.1.3: Checkbox
+                Gives a checkbox that can be selected.  Similar to radio, these should also be within its own label elements and have names.
+            1.7.1.4: Reset
+                Provides a reset button that can reset any of the input options in the form.
+Section 2: The DOM

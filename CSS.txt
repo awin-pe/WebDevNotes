@@ -1,0 +1,46 @@
+These are notes for CSS programming
+
+Sections:
+1: The Basics
+    1.1: CSS Rules
+    1.2: Attributes
+        1.2.1: Width
+        1.2.2: Padding
+        1.2.3: Margine
+    1.3: Rules
+    1.4: Styling Classes
+    1.5: Styling IDs
+    1.6: Inheritance
+2: Preprocessors
+
+Section 1: The Basics
+    1.1: CSS Rules
+        CSS is programmed using rules.  This means that you must first specify which html code you are styling, and then select what attribute you are style, and give a rule.
+        For example, if you wanted to style the h1 element in your HTML -> h1 {attribute: rule;}.  Remember to include a semi-colon at the end of each rule.  Doing so allows you
+        to style multiple attributes within one rule.
+    1.2: Attributes
+        Attributes for an html element can be font-size, text color, font-style, etc.  Use google to find a list of all attributes you can style.
+        1.2.1: Width
+            The width attribute can be used to specify how wide an html element should be, in pixels.  Just as with font size, use a number followed by px.  e.g. width: 500px;
+        1.2.2: Padding
+            Padding determines the amount of space between an elements border, and the center of the element.  For example, the higher the padding value the more squashed the elements
+            inside are.  With smaller padding, content and elements inside will be closer to the edges of the parent element. Can use top, bottom, left, right or stack them in a
+            clockwise order like padding: 10px 10px 10px 10px.
+        1.2.3: Margin
+            Margin controls the amount of space between an elements border and the elements outside of it.  The higher the margin the more squashed an element is inside outer elements.
+            If you set the margins to a negative value, the element will grow and take up more space of its surrounding element.  cant use top, bottom, left, right or stack them in
+            a clockwide order like margin: 10px 10px 10px 10px.
+    1.3: Rules
+        Rules determine what stye the particular attribute should take on.  For example what colour, what size, what look is that section of the page going to have?
+    1.4: Styling Classes
+        To style classes, rather than just using the element identifier, you must use a fullstop followed by the class name.  E.g. .navbar {foo: bar}.
+    1.5: Styling IDs
+        Similar to classes, to style IDs use a hash followed by the name of the ID.  e.g. #entry-box {foo:bar;}
+    1.6: Inheritance
+        Elements will inherit the style rules of its parent element.  Therefore any rule you apply to an element will also apply to all nested elements, unless the nested elements
+        have its own set of rules for the same attribute being styled.  The rules of a child element will not apply to a child element.  In the event that multiple rules are styling
+        the same element, the last rule will always win.  However, ID styling has precedence over class and element styling, and inline styling has precedence over that.
+    1.7: !important
+        Should you need to override your own style rules or that brought in by a library, the !important attribute will take precedence over all else.
+        e.g. color: green !important;
+Section 2: Preprocessors.
