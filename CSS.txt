@@ -11,7 +11,9 @@ Sections:
     1.4: Styling Classes
     1.5: Styling IDs
     1.6: Inheritance
-2: Preprocessors
+2: Bootstrap
+    2.1: What is Bootstrap?
+3: Preprocessors
 
 Section 1: The Basics
     1.1: CSS Rules
@@ -43,4 +45,11 @@ Section 1: The Basics
     1.7: !important
         Should you need to override your own style rules or that brought in by a library, the !important attribute will take precedence over all else.
         e.g. color: green !important;
-Section 2: Preprocessors.
+    1.8: Colours
+        Colours can be typed as their normal name, by using their rgb value, or by using their hex code.  In order to use rgb you use the parameters rgb(foo,bar,baz). To use a
+        hexcode use the hash symbol and 6 hexcharacters, e.g. #FFAA00
+Section 2: Bootstrap
+    2.1: What is Bootstrap?
+        Bootstrap is a css framework with pre-styled classes that you can use in your html code.  The classes are responsive and come with attributes and rules so you do not have
+        to come up with them yourself.  However, you should change some of the styling on them to make your page unique.
+Section 3: Preprocessors.
