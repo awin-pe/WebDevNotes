@@ -1,4 +1,15 @@
-These are notes for Javascript planning.
+These are notes for Javascript programming for web development
 
 Sections:
 1: The Basics
+2. JQuery
+
+Section 1: The Basics
+Section 2: JQuery
+    2.1: WHat is JQuery?
+        JQuery is a javascript library that collects functions that make manipulating HTML pages much easier.  It adds new functionality to the code and allows for more
+        interactivity and responsive to the page.
+    2.2.: Adding JQuery
+        JQuery is added in the form of scripts that target specific elements in the code.  In order to have the page be ready for scripts to be run on it, you must use the
+        document.ready() function call so that the scripts are run only when the entire page and all its elements have loaded.
+        Like so: <script>$(document).ready(function(){ #code goes in here });</script>

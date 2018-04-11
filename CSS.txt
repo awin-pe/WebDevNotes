@@ -73,8 +73,10 @@ Section 2: Bootstrap
             btn-info: makes the button light blue
             btn-delete: makes the button red
             row: creates a container for responsive columns
+            form-control: apply to forms o give contained elements some global styling
+            well: gives the element contained a rounded border with a light grey colour
         2.3.2: Columns
-            Bootstrap uses columns to span elements across the screen.  There are 12 columns that span the page, and you can use Bootstrap to divide the page up into groups of
-            12, 8 and 4, 3 4s, and 2 6s.
+            Bootstrap uses columns to span elements across the screen.  There are 12 columns that span the page, and you can use Bootstrap to divide the page up into any number
+            sized group as long as they total to 12 across the screen.
             col-foo-bar : foo = xs, sm, md, lg for screen size. bar = span size 1 to 12.
 Section 3: Preprocessors.
