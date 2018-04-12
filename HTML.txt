@@ -27,7 +27,8 @@ Section 1: The Basics
         1.1.1: Styles
             You can style elements individually by using "style" inside the starting tag.  For example <h1 style = "foo"> bar </h1>
         1.1.2.: Nesting
-            You can nest as many elements as you want within each other.  Doing so means you can use pictures and links, use links in text, etc.
+            You can nest as many elements as you want within each other.  Doing so means you can use pictures and links, use links in text, etc.  Nested creates a parent-child
+            relationship between elements.  An element placed inside another becomes its "child", with the outer element becoming its "parent".
     1.2: Tags
         <body> Specifies the whole body of the site.
         <h1-6> Are used for headings.  The size of the heading gets smaller as the number gets larger.

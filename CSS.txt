@@ -11,6 +11,8 @@ Sections:
     1.4: Styling Classes
     1.5: Styling IDs
     1.6: Inheritance
+    1.7: !important
+    1.8: Colours
 2: Bootstrap
     2.1: What is Bootstrap?
     2.2: Adding Bootstrap
@@ -74,7 +76,7 @@ Section 2: Bootstrap
             btn-delete: makes the button red
             row: creates a container for responsive columns
             form-control: apply to forms o give contained elements some global styling
-            well: gives the element contained a rounded border with a light grey colour
+            well: gives the element contained a rounded border with a grey bakground and some padding
         2.3.2: Columns
             Bootstrap uses columns to span elements across the screen.  There are 12 columns that span the page, and you can use Bootstrap to divide the page up into any number
             sized group as long as they total to 12 across the screen.

@@ -3,13 +3,35 @@ These are notes for Javascript programming for web development
 Sections:
 1: The Basics
 2. JQuery
+    2.1: What is JQuery?
+    2.2: Adding JQuery
+    2.3: Programming JQuery
+        2.3.1: JQueryFunctions
 
 Section 1: The Basics
 Section 2: JQuery
-    2.1: WHat is JQuery?
+    2.1: What is JQuery?
         JQuery is a javascript library that collects functions that make manipulating HTML pages much easier.  It adds new functionality to the code and allows for more
         interactivity and responsive to the page.
     2.2.: Adding JQuery
         JQuery is added in the form of scripts that target specific elements in the code.  In order to have the page be ready for scripts to be run on it, you must use the
         document.ready() function call so that the scripts are run only when the entire page and all its elements have loaded.
         Like so: <script>$(document).ready(function(){ #code goes in here });</script>
+    2.3: Programming JQuery
+        JQuery functions start with a $ sign.  JQuery selects a HTML element with a selector, then does something with that selector, for example add an animation.
+        You may need to add an additional CSS library of animations to add them to the page.  Also, single quotes do not work so remember to use double quotes.
+        E.g. $("button").addClass("animated bounce");
+        To select an HTML class use a fullstop as with CSS, and to select an id use a hash as with CSS.
+        It is also possible to target the nth child of a child element when selecting, for example $(".target:nth-child(3)").addClass("animated bounce");
+        2.3.1: JQuery Functions:
+            addClass(classes): adds one or more class names to the selected elements.  To add more than one class separate with spaces.
+            removeClass(classes): opposite of addClass.
+            css(attribute, rule): change the css of a selected element.
+            prop(propery, value): to change the value of an element's property.  To see the value of the property jut put the property.
+            html(text): change the html content of an entire element.  You can even change the markup and tags.
+            text(text): change only the text inside, won't change html.
+            remove(): remove an element entirely.
+            appendTo(selector): appends the selected element to a specific selected element.
+            clone().appendTo(): similar to append, but copies rather than moves.
+            parent(): allows you to access the parent element of a given selected element in order to change it in some way.
+            children(): opposite of parent, allowing you to access the child element of a given selected element.
