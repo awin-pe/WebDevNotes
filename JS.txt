@@ -2,6 +2,18 @@ These are notes for Javascript programming for web development
 
 Sections:
 1: The Basics
+    1.1: Commenting
+    1.2: Variables
+        1.2.1: Naming
+        1.2.2: Data Types
+            1.2.2.1: String Operations
+        1.2.3: Scope
+    1.3: Operators
+    1.4: Arrays
+        1.4.1: Array Operations
+    1.5: Functions
+        1.5.1: Creating a Function
+        1.5.2: Using Functions
 2. JQuery
     2.1: What is JQuery?
     2.2: Adding JQuery
@@ -9,6 +21,54 @@ Sections:
         2.3.1: JQueryFunctions
 
 Section 1: The Basics
+    1.1: Commenting
+        Comments are necessary in order for the code to be better understood by people.  Commenting variable initialisations, function declarations and class templates will ensure
+        that other people reading your code will understand what you are trying to do.  It also helps when you are coming back to your code after a time away.
+        Write a single line comment after two slashes //
+        Write a multi line comment between /* comment here */
+    1.2: Varibles
+        Variables are used to hold data in our programs.  Create a variable using the var keyword.  E.g. var name.  Initialise variables with values with =.  var x = 5;  Remember
+        to end lines of code with ;.  Compound assignment is when you take a variable, give it a value, and then assign it to itself.  e.g. i = i + 1;.
+        1.2.1: Naming
+            Names should be descriptive so that it is clear what it is for.  It should also use a camelCase typing scheme so it is easy to read.  Start with lower case and each
+            new word in upper case.
+        1.2.2: Data Types
+            Data types include integers (whole numbers), Strings (anything between quotes), floating point numbers (e.g 3.14), and boolean (true,false).
+            1.2.2.1: String Operations
+                You may need to do certain operations on Strings in order to manipulations. Here are some examples.  Remember: Strings are immutable and as such cannotbe changed
+                after creation.  In order to change the value of a string the whole variable must be changed.
+                Concatenation: connecting strings together.  Use the + operator add string variables and literals.
+                .length: Use .length to return the length of the string it is being used on.
+                Indexing: Use [x], where x is an integer, in order to return the charater that is at that index.  Remember: indexing starts from 0.
+            1.2.3: Scope
+                Scope refers to the accessiblity of variables within the program.  Scope is determined by the curly brackets.  Variables outside of a pair of curly brackets can
+                be accessed at any point within.  Variables created within a set of curly brackets cannot be accessed at any point outside.
+                This only applies to variables created with the var keyword.  It is possible to create global variables by not using var, but this can create side effects elsewhere
+                in the program.  Variables created inside a function are said to have "local scope".
+    1.3: Operators
+        Mathematical operators are +, -, *, /, %.  Logical operators are <, >, =, !.  Can be used in assignment and also iteration and selection.
+    1.4: Arrays
+        Arrays are stores in your program that can hold multiple items of data in discrete locations.  They can store data of any type, in any order and time.  You can even
+        store an array of arrays.  This is called a multi-dimensional array.  Indexing arrays is the same as in Strings, use [x].  Unlike Strings, arrays are mutable and their
+        contents can be changed at any time, using the index you want to change.  When indexing multi-dimensional arrays the first index is the outermost array index, and each
+        subsequent index is each subsequent inner array.
+        1.4.1: Array operations:
+            Here are some operations you may perform on arrays beyond indexing.
+            .push([]): You can append data in the form of another array onto the end of an array using the .push method.
+            .unshift([]): Works in the same way as push but onto the start of an array.
+            .pop(): removes and returns the item at the end of the array.
+            .shift(): works in the same way as .pop() but on the first item in the array.
+    1.5: Functions:
+        Functions are a way of writing reusable bits of code that do specific tasks.  It is a way of cleaning up your code and reducing errors as rather than rewriting common
+        sections, you write one section that you test and reuse.
+            1.5.1: Creating a Function:
+                To create a function you must use the function keyword, then give it a name, and parameters.  The parameters are for any variables the function will need in
+                order to do its job.  The naming follows the same convention as variable naming. e.g. function test(){}.
+                Within the curly brackets of the function is any code the function will be executing.
+                The function may return a value using the return keyword, or it may just execute lines.
+            1.5.2: Using Functions:
+                In order to use a function in your program you must use its name as it is written in the function declaration.  If the function returns a value then you can use it
+                in variable declarations, print statements etc.
 Section 2: JQuery
     2.1: What is JQuery?
         JQuery is a javascript library that collects functions that make manipulating HTML pages much easier.  It adds new functionality to the code and allows for more

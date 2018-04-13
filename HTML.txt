@@ -83,3 +83,10 @@ Section 1: The Basics
             1.7.1.4: Reset
                 Provides a reset button that can reset any of the input options in the form.
 Section 2: The DOM
+    2.1: What is the DOM?
+        The DOM is the "Document Object Model".  It describes the programmatic representation of a webpage.  For example, the class names and ids of particular elements.
+        Languages like Javascript allow you to edit the DOM, and thus the webpage without actually editing the HTML where it was written.  For example, using the Javascript
+        getElementById and JQuery $(selector).etc.
+    2.2: Headers and Footers
+        Style sheets should be put in the header, and the scripts should be put in the footer.  This ensures that the content for a site will not be loaded in the wrong order.
+        The DOM will tell the browser that it is ready once the HTML has displayed, but if the styles and scripts are not then it will be late.
