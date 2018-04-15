@@ -11,14 +11,21 @@ Sections:
     1.3: Operators
     1.4: Arrays
         1.4.1: Array Operations
-    1.5: Functions
-        1.5.1: Creating a Function
-        1.5.2: Using Functions
-2. JQuery
+    1.5: If statements
+        1.5.1: Switch statements
+    1.6: Functions
+        1.6.1: Creating a Function
+        1.6.2: Using Functions
+    1.7: Objects
+        1.7.1: Creating objects
+        1.7.2: Accessing object properties
+2: JQuery
     2.1: What is JQuery?
     2.2: Adding JQuery
     2.3: Programming JQuery
         2.3.1: JQueryFunctions
+3: JSON
+4: AJAX
 
 Section 1: The Basics
     1.1: Commenting
@@ -46,7 +53,7 @@ Section 1: The Basics
                 This only applies to variables created with the var keyword.  It is possible to create global variables by not using var, but this can create side effects elsewhere
                 in the program.  Variables created inside a function are said to have "local scope".
     1.3: Operators
-        Mathematical operators are +, -, *, /, %.  Logical operators are <, >, =, !.  Can be used in assignment and also iteration and selection.
+        Mathematical operators are +, -, *, /, %.  Logical operators are <, >, ==, !, ===  Can be used in assignment and also iteration and selection.
     1.4: Arrays
         Arrays are stores in your program that can hold multiple items of data in discrete locations.  They can store data of any type, in any order and time.  You can even
         store an array of arrays.  This is called a multi-dimensional array.  Indexing arrays is the same as in Strings, use [x].  Unlike Strings, arrays are mutable and their
@@ -58,17 +65,31 @@ Section 1: The Basics
             .unshift([]): Works in the same way as push but onto the start of an array.
             .pop(): removes and returns the item at the end of the array.
             .shift(): works in the same way as .pop() but on the first item in the array.
-    1.5: Functions:
+    1.5: If Statements
+        If statements are a way of having your program branch and do different things depending on a condition.  The condition will be a logical statement that will evaluate with
+        either true or false.  An else statement is used to catch the cases where the conditions are not met.
+        1.5.1: Switch Statements
+            Switch statements are similar to if statements in that they evaluate multiple conditions called "Cases".  When the switch statements finds the right case it will then
+            "break".  The switch function is called on a variable, then each case evaluates.  I.e. switch (num){ case 1, case 2, case 3, etc}.  To execute something in the event
+            that no case finishes use "default".
+    1.6: Functions:
         Functions are a way of writing reusable bits of code that do specific tasks.  It is a way of cleaning up your code and reducing errors as rather than rewriting common
         sections, you write one section that you test and reuse.
-            1.5.1: Creating a Function:
+            1.6.1: Creating a Function:
                 To create a function you must use the function keyword, then give it a name, and parameters.  The parameters are for any variables the function will need in
                 order to do its job.  The naming follows the same convention as variable naming. e.g. function test(){}.
                 Within the curly brackets of the function is any code the function will be executing.
                 The function may return a value using the return keyword, or it may just execute lines.
-            1.5.2: Using Functions:
+            1.6.2: Using Functions:
                 In order to use a function in your program you must use its name as it is written in the function declaration.  If the function returns a value then you can use it
                 in variable declarations, print statements etc.
+    1.7: Objects:
+        Javascript allows you to make objects.  Objects are ways of structuring and storing data in a program.  They can represent real world objects by giving them specific properties.
+        1.7.1: Creating Ojects:
+            To create an object you declare it as a var, and give it a name.  Then you declare its properties and the values those properties will have. For example:
+            var doge { "name": "wow", "legs": 4, "memes": "many", etc}.
+        1.7.2: Accessing Object Properties:
+            To access an object's properties use the fullstop.  You can also access an objects properties using square brackets if the properties have a space in them.
 Section 2: JQuery
     2.1: What is JQuery?
         JQuery is a javascript library that collects functions that make manipulating HTML pages much easier.  It adds new functionality to the code and allows for more
@@ -95,3 +116,8 @@ Section 2: JQuery
             clone().appendTo(): similar to append, but copies rather than moves.
             parent(): allows you to access the parent element of a given selected element in order to change it in some way.
             children(): opposite of parent, allowing you to access the child element of a given selected element.
+            on("event", function(){}); : calls the function when the browser generates an event due to user action such as a click.
+Section 3: JSON
+    3.1: What is JSON?
+        JSON stands for Javascript Object Notation.
+Section 4: AJAX
