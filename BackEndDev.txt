@@ -1,0 +1,56 @@
+These are notes for Backend Web Development
+
+Sections
+1: NPM
+    1.1: Starting NPM
+    1.2: Installing a Module
+    1.3: Listing Dependencies
+    1.4: NPM Test
+    1.5: Publishing a Package
+    1.6: Viewing a Package
+    1.7: Updating a Package
+    1.8: Dist-tags
+    1.9: Updating Other Packages
+    1.10: Removing Packages
+2.0: Node.js
+    2.1: What is Node.js?
+
+Section 1: NPM
+    npm is a dependency and package manager for Javascript.  This means that whenever a project is started, the necessary packages and dependencies can be specified using NPM.
+    npm can then be used to assemble the required packages for anyone new coming onto the project so that only the right packages are installed.
+    1.1: Starting NPM
+        The first thing you should do is start an npm development environment in your working directory.  The first command that should be run is "npm init".  This creates a
+        package.json file that will keep track of all dependencies and packages required in the project.  You must then start a user account with "npm adduser".  This creates a live
+        page that anyone can go to and install packages that you can published.  It is also good practice to include a README.md file with important information in it.
+    1.2: Installing a Module
+        The first thing people do is install a dependecy.  Dependencies are fetched from the registry and unpacked in the node_modules folder.  To install a module use the
+        "npm install <modulename>" command.  The registry is located on the npmjs website and has a lot of packages on it.  Once you have installed a dependency it will
+        automatically update your package.json file.
+    1.3: Listing Dependencies
+        You can also use npm to list your dependencies and see what packages you have installed.  This is done with the "npm ls" command, which reads what dependencies are
+        listed in your package.json file.
+    1.4: NPM Test
+        npm can be used a task runner with the scripts property in the package.json file.  Almost every project and module will have a test script that runs to make sure everything
+        works properly.  You would create a test file within which you would write your tests.  In your package.json file you must then specify where the test is in the scripts
+        property.  For example, scripts { "scripts": "node test.js"},
+    1.5: Publishing a Package
+        You can publish a package for others to view and use with the npm publish command.  Your package name will be your username/foldername that you initiated the npm in.
+    1.6: Viewing a Package
+        You can view a package with npm view <packagename> in order to see what it contains, and to see if any names are already taken.
+    1.7: Updating the Package.
+        Every package in npm has a version number associated with it.  As you release updates to your package, these updates get an updated version number.  Version numbers in
+        npm follow a standard called "SemVer".  E.g., 1.1.1, 1.1.2, etc.  npm has a special command called `npm version` which will update your package.json file for
+        you, and also commit the change to git if your project is a git repository.  You can learn more at `npm help version`.  The npm registry won't let you publish a new release
+        of your package without updating the version number!  Ever!
+    1.8: Dist-Tags
+        npm links strings like "latest" to version numbers like 1.2.3.  By default the latest version gets installed, but sometimes you may not want the latest version.
+        You can manually manage these distribution tags with the dist-tag function.   `npm dist-tag add <pkg>@<version> [<tag>]` will add a new tag.  To find out the name of your
+        current package/version type `npm ls`.  The first line of the output will be the package and version; e.g. pkg@1.0.1.  To add a tag type in the name of the tag.
+        e.g: npm dist-tag add pkg@1.0.1 beta.  You cannot remove the "latest" dist-tag, but you can point to a new one.  To remove run npm dist-tag rm.
+    1.9: Updating Other Packages
+        In order to see if other people's packages have updated run "npm outdated".  If you have a dependency that needs updating run npm update.
+    1.10: Removing Packages
+        In order to remove packages run npm rm, or npm uninstall.
+Section 2: Node.js
+    2.1: What is Node.js?
+
